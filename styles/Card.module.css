@@ -1,0 +1,109 @@
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    width: 50vw;
+}
+
+.cardContent {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    border: solid rgba(115, 127, 167, 0.623) 1px;
+    background-color: rgba(127, 141, 175, 0.158);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 10px 10px 10px #05223d36;
+    margin: -1px;
+    position: relative;
+    font-family: 'Noto Sans', sans-serif;
+    flex-wrap: wrap;
+}
+
+.items {
+    color : rgb(227, 227, 236);
+    font-family: 'Noto Sans', sans-serif;
+    text-decoration: none;
+}
+.contentBlock {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: rgb(225, 235, 255);
+    background-color: #575d9c54;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 8px;
+    border: solid #00000000 1px;
+    box-shadow: 10px 10px 20px rgba(6, 26, 51, 0.137);
+    user-select: none;
+    cursor: pointer;
+}
+.contentBlock:hover {
+    background-color: #071d3636;
+    box-shadow: 5px 5px 5px rgba(6, 19, 43, 0.336);
+    color: white;
+}
+.icon {
+    font-size: 30px;
+}
+.modal {
+    z-index: 99;
+    position: absolute;
+    padding: 6px;
+    top: 40px;
+    width: max-content;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top:solid rgb(0, 255, 128) 1px;
+    border-left: solid rgba(115, 127, 167, 0.623) 1px;
+    border-right: solid rgba(115, 127, 167, 0.623) 1px;
+    border-bottom: solid rgba(115, 127, 167, 0.623) 1px;
+    background-color: rgb(32, 50, 71);
+    font-size: 14px;
+    animation: spawn 400ms ease;
+}
+
+@keyframes spawn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.modal > .items {
+    color: white;
+    transition: 200ms;
+    padding: 5px;
+}
+.modal > .items:hover {
+    color: rgb(0, 255, 128)
+}
+@media only screen and (max-width: 800px) {
+    .cardContent {
+        font-size: 12px;
+    }
+    .card {
+        width: 80vw;
+    }
+    .options {
+        width: 100vw;
+    }
+    .footer {
+        font-size: 10px;
+    }
+    .icon {
+        font-size: 24px;
+    }
+    .contentBlock {
+        font-size: 12px;
+        padding: 5px;
+    }
+}

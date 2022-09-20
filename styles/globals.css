@@ -1,26 +1,26 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:ital,wght@1,600&family=Noto+Sans&family=Outfit:wght@300;400;800&display=swap');
 * {
-  box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
+html {
+    height: auto;
+    background: rgb(7, 31, 61);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+}
+a {
+  color: white;
+  text-decoration: none;
+  transition: 200ms;
+}
+a:hover {
+  color: rgb(42, 202, 128);
+}
+#root {
+    height: 100%;
 }
