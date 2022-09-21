@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDom from 'react-dom';
 import styles from '../styles/Card.module.css';
-
+import Link from "next/link";
 const links = [['gaming-general', 'gaming-news', 'multiplayer-games', 'mobile-games', 'retro-games', 'rpg-games']
             ,['comics-and-film', 'technology', 'business-and-finance', 'science-and-math', 'outdoors', 'sports']
             ,['food-and-cooking', 'artwork-critique', 'literature', 'music', 'fashion', 'graphic-design']
@@ -40,9 +40,12 @@ export default function Modal(props){
     return (
         <div className={styles.modal}>
             {links[sec].map(e =>
-                <div className={styles.items}>
-                <a href={e}>{e}</a>
-                </div>
+                <Link href='/sector/[id]' as={`/sector/${e}`}>
+                    <div className={styles.items}>
+                        <a href={`sector/e`} as >{e}</a>
+                    </div>
+                </Link>
+
             )}
         </div>
     )

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SectorItem from "./SectorItem";
+
 import Modal from './Modal';
 import styles from '../styles/Card.module.css';
 import 'material-icons/iconfont/material-icons.css';

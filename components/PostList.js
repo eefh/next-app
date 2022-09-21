@@ -1,16 +1,13 @@
-
+import styles from '../styles/Post.module.css';
 import Post from './Post';
 
-export default function ProductList({posts}){
-    if (!posts) return null
-
+const PostList = ({ posts }) => {
     return (
-        <div>
-            {posts.map((post) => {
-                <div key={post.id}>
-                    <Post {...post}/>
-                </div>
+        <div className={styles.postList}>
+            {posts.slice(0).reverse().map((post, i) => {
+                return (<Post key={i}{...post}/>)
             })}
         </div>
     )
 }
+export default PostList;

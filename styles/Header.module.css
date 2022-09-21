@@ -14,9 +14,13 @@
 }
 .title {
     color: white;
+    animation: 800ms spawn ease-out;
 }
-.link {
-    text-decoration: none;
+@keyframes spawn {
+    0% {
+
+        opacity: 0%;
+    }
 }
 .globe {
     position: relative;
@@ -24,7 +28,17 @@
     font-size: 49px;
     top: 6px;
     transition: 400ms;
+    animation: 2000ms earthSpawn ease-out;
 }
+@keyframes earthSpawn {
+    0% {
+        color: rgb(42, 202, 128);
+    }
+}
+.link {
+    text-decoration: none;
+}
+
 .globe:hover {
     color: rgb(42, 202, 128);
 
