@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useRouter } from 'next/router';
 import PostList from '../../../components/PostList';
 import Create from '../../../components/Create';
-import server from '../../../config/index';
+import {server} from '../../../config/index';
 import SectorTitle from "../../../components/SectorTitle";
 const categories = ['gaming-general', 'gaming-news', 'multiplayer-games', 'mobile-games', 'retro-games', 'rpg-games',
 'comics-and-film', 'technology', 'business-and-finance', 'science-and-math', 'outdoors', 'sports',
@@ -27,7 +27,7 @@ const sector = ({posts}) => {
 
 export const getServerSideProps = async (context) => {
     if (categories.some(i => i === context.params.id)){
-        const res = await fetch(`http://localhost:3000/api/${context.params.id}`);
+        const res = await fetch(`${server}/api/${context.params.id}`);
         const posts = await res.json();
         return {
             props: {
