@@ -39,10 +39,10 @@ export default function Modal(props){
     }
     return (
         <div className={styles.modal}>
-            {links[sec].map(e =>
-                <Link href='/sector/[id]' as={`/sector/${e}`}>
+            {links[sec].map((e,i) =>
+                <Link key ={i} href='/sector/[id]' as={`/sector/${e}`}>
                     <div className={styles.items}>
-                        <a href={`sector/e`} as >{e}</a>
+                        <a href={`sector/e`} >{e}</a>
                     </div>
                 </Link>
 
