@@ -20,6 +20,9 @@ const Create = () => {
                     headers: {"Content-Type": "application/json"},
                     body: JSON.stringify(body)
                 });
+                setTitle('');
+                setDesc('');
+                setFile('');
             } catch (error) {
                 console.error(error.message);
             }
