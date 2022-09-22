@@ -12,7 +12,7 @@ const Create = () => {
     const [file, setFile] = useState('');
     const handleSubmit = async(e) => {
         e.preventDefault()
-        if (desc && title){
+        if (((title) || (title && desc)) || file){
             try {
                 const body = { title, desc, file, category: router.query, date: new Date().toGMTString(), replies: []}
                 const response = await fetch('/api/posts', {
