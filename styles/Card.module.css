@@ -27,6 +27,16 @@
     font-family: 'Noto Sans', sans-serif;
     text-decoration: none;
 }
+.footer {
+    color: rgba(166, 219, 255, 0.432);
+    font-size: 12px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px 10px 0px;
+    user-select: none;
+}
 .contentBlock {
     display: flex;
     position: relative;
