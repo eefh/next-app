@@ -13,6 +13,8 @@ export default function Home() {
       <Head>
         <title>Zerlog</title>
         <meta name='keywords' content='discussion, debate, forum'/>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6336001957803262"
+     crossorigin="anonymous"></script>
       </Head>
       <h1 className={styles.title}>Welcome to Zerlog...</h1>
     </div>

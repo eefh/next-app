@@ -17,6 +17,8 @@ const sector = ({posts}) => {
         <div>
             <Head>
                 <title>{`Zerlog | ${id}`}</title>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6336001957803262"
+     crossorigin="anonymous"></script>
             </Head>
             <SectorTitle title={id}/>
             <Create/>
